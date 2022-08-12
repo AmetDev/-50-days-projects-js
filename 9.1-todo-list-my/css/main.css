@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  color: #ffff;
+  background: rgb(142, 73, 232);
+}
+body{
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+  padding: 10px;
+  background: linear-gradient(to bottom, #689aea 0%, #703c8a 100%);
+  display: flex;
+
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 5px;
+  border: 1px solid #222;
+  border-radius: 5px;
+ }
+
+li > button {
+  border: 2px solid rgb(222, 67, 67);
+  border-radius: 4px;
+  width: 30px;
+  opacity: 0;
+  color: #fff;
+  background-color: rgb(222, 67, 67);
+  transition: all 0.4s ease;
+}
+
+li > button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+ ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+  padding-bottom: 10px;
+
+ }
+
+
+.wrapper {
+  background-color: #fff;
+  width: 400px;
+  display: flex;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.wrapper_inner {
+  margin: auto;
+}
+
+.header {
+  font-size: 35px;
+  padding-bottom: 25px;
+}
+
+input {
+  font-size: 20px;
+  all: unset;
+}
+
+
+.input_block {
+  border: 1px solid #222;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.input_block > .button {
+  border: 2px solid #689aea;
+  border-radius: 5px;
+  height: 36px;
+  background-color: #689aea;
+  width: 30px;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.input_block > .button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
