@@ -6,4 +6,6 @@ BtnRed.addEventListener("click", function() {
     // console.log(intro)
     // intro.classList.add("overlay_modal")
     console.log("developer2")
+    console.log("developer2")
+    console.log("developer2")
 })
