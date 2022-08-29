@@ -1,0 +1,40 @@
+body {
+    
+}
+.space {
+    margin-bottom: 20px;
+}
+
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header_form {
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.form {
+}
+.username {
+}
+.name_user {
+}
+.number_user {
+}
+.tel_user {
+}
+.message {
+}
+.email {
+}
+.type_email {
+}
+.radiobox {
+}
+.file {
+}
