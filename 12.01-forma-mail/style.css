@@ -1,5 +1,7 @@
 body {
-    
+    background-color: #222;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
 }
 .space {
     margin-bottom: 20px;
@@ -17,6 +19,8 @@ body {
     font-size: 24px;
     padding-top: 30px;
     padding-bottom: 20px;
+    border-bottom: 2px solid;
+    margin-bottom: 20px;
 }
 .form {
 }
@@ -37,4 +41,8 @@ body {
 .radiobox {
 }
 .file {
+}
+
+.sumbit_button {
+    margin-top: 20px;
 }
