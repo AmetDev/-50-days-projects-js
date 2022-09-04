@@ -22,4 +22,8 @@ body {
     display: flex;
     flex-direction: column-reverse;
   }
+
+  ._style_error {
+    box-shadow: 0 0 15px rgb(210, 57, 30);
+  }
   
