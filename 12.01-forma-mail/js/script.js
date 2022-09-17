@@ -14,14 +14,21 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
           element.classList.remove("_style_error")   
         };
-      const emailInput = document.querySelector(".input-mail")
-      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput)) {
-        emailInput.classList.remove("_style_error")
-        console.log(true)
-      } else { 
-        console.log(false)
-        emailInput.classList.add("_style_error")
+        const inputMail = document.querySelector(".input-mail")
+        const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+      onInput()
+      function onInput() {
+        if (isEmailValid(inputMail.value)) {
+          inputMail.classList.remove("_style_error")
+        } else {
+          inputMail.classList.add("_style_error")
+        }
       }
+      function isEmailValid(value) {
+        return EMAIL_REGEXP.test(value);
+      }
+    
+
     });
   };
 });
